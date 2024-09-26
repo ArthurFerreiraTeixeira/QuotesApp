@@ -4,7 +4,7 @@ import quotes from './assets/quotes.json';
 
 const QuotesApp = () => {
   const [currentQuote, setCurrentQuote] = useState({});
-  const imageSource = currentQuote.image;
+
   useEffect(() => {
     getRandomQuote();
   }, []);
@@ -14,11 +14,25 @@ const QuotesApp = () => {
     setCurrentQuote(quotes[randomIndex]);
   };
 
+  // Função para mapear a imagem local
+  const getImageSource = (imageName) => {
+    switch (imageName) {
+      case 'johnlennon.png':
+        return require('./assets/johnlennon.png');
+      case 'stevejobs.png':
+        return require('./assets/stevejobs.png');
+      case 'einstein.png':
+        return require('./assets/einstein.png');
+      default:
+        return null;
+    }
+  };
+
   return (
     <View style={styles.container}>
       {currentQuote.image && (
         <Image 
-        source={{ uri: currentQuote.image }}
+          source={getImageSource(currentQuote.image)} 
           style={styles.image} 
           resizeMode="contain"
         />
@@ -57,4 +71,5 @@ const styles = StyleSheet.create({
 });
 
 export default QuotesApp;
+
 

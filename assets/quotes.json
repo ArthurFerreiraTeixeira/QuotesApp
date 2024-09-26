@@ -1,18 +1,17 @@
 [
-    {
-      "quote": "A vida é o que acontece enquanto você está ocupado fazendo outros planos.",
-      "author": "John Lennon",
-      "image": "./assets/johnlennon.png"
-    },
-    {
-      "quote": "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
-      "author": "Steve Jobs",
-      "image": "./assets/stevejobs.png"
-    },
-    {
-      "quote": "A imaginação é mais importante do que o conhecimento.",
-      "author": "Albert Einstein",
-      "image": "./assets/einstein.png"
-    }
-  ]
-  
+  {
+    "quote": "A vida é o que acontece enquanto você está ocupado fazendo outros planos.",
+    "author": "John Lennon",
+    "image": "johnlennon.png"
+  },
+  {
+    "quote": "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
+    "author": "Steve Jobs",
+    "image": "stevejobs.png"
+  },
+  {
+    "quote": "A imaginação é mais importante do que o conhecimento.",
+    "author": "Albert Einstein",
+    "image": "einstein.png"
+  }
+]
