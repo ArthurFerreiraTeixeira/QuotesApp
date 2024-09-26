@@ -14,7 +14,6 @@ const QuotesApp = () => {
     setCurrentQuote(quotes[randomIndex]);
   };
 
-  // Função para mapear a imagem local
   const getImageSource = (imageName) => {
     switch (imageName) {
       case 'johnlennon.png':
